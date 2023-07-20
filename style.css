@@ -1,0 +1,20 @@
+.player-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153 137 137);
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.player-container > h3{
+    margin-bottom: 3rem;
+}
+#btn-container {
+    margin-top: 1rem;
+}
+#btn-container > button{
+    font-size: 5rem;
+}
+#startGame-Btn {
+    font-size: 2rem;
+}
