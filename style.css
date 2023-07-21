@@ -1,20 +1,81 @@
-.player-container{
+body{
+    background-color: black;
+    color: yellow;
+}
+h1{
+    text-align: center;
+}
+#score-container{
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-direction: column;
+}
+#score-container > h3 {
+    margin-bottom: 0.5rem;
+}
+#score-container > div{
+    display: flex;
+    gap: 10rem;
+}
+#textBox{
+    margin-bottom: 0.5rem;
+}
+
+
+#container{
+    padding: 1rem 1rem;
+    display: flex;
+    /* background-color: rgb(160, 142, 142); */
+    color: white;
+    gap: 2rem;
+}
+.player-container,.pc-container{
+    border: 0.3rem solid #765858;
+    background-color: #44ff00;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: rgb(153 137 137);
-    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.pc-container{
+    background-color: #9042d8;
+    flex: 1;
+}
+.btn-container button{
+    font-size: 2rem;
+}
+footer{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.player-container > h3{
-    margin-bottom: 3rem;
-}
-#btn-container {
+.Game-Btn{
+    font-size: 1.5rem;
     margin-top: 1rem;
+    background-color: #395adf;
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    border: none;
 }
-#btn-container > button{
-    font-size: 5rem;
+footer{
+    display: flex;
+    flex-direction: column;
 }
-#startGame-Btn {
-    font-size: 2rem;
+#finalResult{
+    font-size: 1.5rem;
+}
+.yellowColor{
+    background-color: yellow;
+}
+.redColor{
+    background-color: red;
+}
+.hide{
+    display: none;
 }
