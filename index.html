@@ -8,16 +8,39 @@
     <script src="script.js"defer></script>
 </head>
 <body>
-    <div class="player-container">
-        <h3>Player</h3>
-        <span id="player-score">playerScore </span> <span id="computer-score">computerScore</span>
-        <div id="btn-container">
-            <button class="player-Btn">✊</button>
-            <button class="player-Btn">✋</button>
-            <button class="player-Btn">✌</button>
+    <h1>Rock Paper Scissors</h1>
+    <header>
+        <div id="score-container">
+            <h3>Score</h3>
+            <div id="textBox"></div>
+            <div>
+                <span id="player-score">you</span>
+                <span id="computer-score">pc</span>
+            </div>
         </div>
-    </div>
-    <button id="startGame-Btn">startGame</button>
-    
+    </header>
+    <main id="container">
+        <section class="player-container">
+            <h2 id="playerName">You</h2>
+            <div class="btn-container">
+                <button class="player-Btn">✊</button>
+                <button class="player-Btn">✋</button>
+                <button class="player-Btn">✌</button>
+            </div>
+        </section>
+        <section class="pc-container">
+            <h2>Pc</h2>
+            <div class="btn-container">
+                <button class="pc-player-Btn">✊</button>
+                <button class="pc-player-Btn">✋</button>
+                <button class="pc-player-Btn">✌</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="Game-Btn">startGame</button>
+        <div id="finalResult"></div>
+    </footer>
 </body>
 </html>
+
