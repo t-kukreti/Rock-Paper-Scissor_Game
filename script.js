@@ -2,6 +2,7 @@ const rockPaperScissorGame = (() => {
     let userScore = 0;
     let machineScore = 0;
     let userName = '';
+    const audio = new Audio('https://www.fesliyanstudios.com/play-mp3/11');
     const textBox = document.querySelector('#textBox');
     const finalResult = document.querySelector('#finalResult');
     const playerName = document.querySelector('#playerName');
@@ -28,7 +29,7 @@ const rockPaperScissorGame = (() => {
     const getPlayerName = ()=>{
         // make this only return a valid name, it should just contain a character.
         let name='';
-        while(!(name.length > 0)){
+        while(!(name)){
             name = prompt('whats your name');
         }
         return name;
@@ -40,6 +41,9 @@ const rockPaperScissorGame = (() => {
             case '✋': return 'paper'; break;
             case '✌': return 'scissors'; break;
         }
+    };
+    const playAudio = () => {
+        audio.play();
     };
 
     const restartGame = () => {
@@ -102,6 +106,9 @@ const rockPaperScissorGame = (() => {
         const compIndex = getComputerChoice().randomIndex;
         const computerChoice = getComputerChoice().gameVals[compIndex].toLowerCase();
         const userChoice = getUserChoice(e.target);
+
+        // added beep sound on clicking the button
+        playAudio();
 
         addNonexistentClass(playerBtn,'yellowColor',e.target);
         addNonexistentClass(computerBtn,'redColor',computerBtn[compIndex]);
